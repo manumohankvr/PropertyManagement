@@ -1,14 +1,21 @@
-<div class="row">
-  <div class="shadow-lg col-sm-4 p-2">
+
     <div class="card">
-      <img class="propImg" src="assets\Images\house_default.jpg" >
+      <div class="img-wrapper">
+        <img class="card-img-top" src="assets\Images\house_default.jpg" >
+        <ul class="list-inline text-center member-icons animate">
+          <li class="list-inline-item">
+            <button class="btn btn-primary btn-sm"><i class="far fa-edit"></i></button>
+          </li>
+          <li class="list-inline-item">
+            <button class="btn btn-primary btn-sm"><i class="far fa-address-book"></i></button>
+          </li>
+        </ul>
+      </div>
+
       <div class="card-body p-2">
-        <h1>{{Property.Name}}</h1>
-        <h2>{{Property.Type}}</h2>
-        <h3>{{Property.Price}}</h3>
+        <h1>{{propertyList.Name}}</h1>
+        <h2>{{propertyList.Type}}</h2>
+        <h3>{{propertyList.Price}}</h3>
       </div>
     </div>
-  </div>
-
-</div>
 
