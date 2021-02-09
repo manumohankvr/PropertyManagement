@@ -1,30 +1,38 @@
 [
   {
     "Id": 1,
+    "SellRent":1,
     "Name":"Birla House",
     "Type": "House",
-    "Price": 1200
+    "Price": 1200,
+    "Image":"prop-1"
   },
   {
     "Id": 2,
+    "SellRent":2,
     "Name":"Jass Villas",
     "Type": "House",
-    "Price": 1000
+    "Price": 1000,
+    "Image":"prop-2"
   },
   {
     "Id": 3,
+    "SellRent":2,
     "Name":"Mouk Residence",
     "Type": "Flat",
-    "Price": 3000
+    "Price": 3000,
+    "Image":"prop-3"
   },
   {
     "Id": 4,
+    "SellRent":1,
     "Name":"Hassess Buliding",
     "Type": "Flat",
     "Price": 2300
   },
   {
     "Id": 5,
+    "SellRent":1,
     "Name":"LOL Homes",
     "Type": "House",
     "Price": 2300

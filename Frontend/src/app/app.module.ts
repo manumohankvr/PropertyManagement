@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {Routes,RouterModule} from '@angular/router';
+import {FormsModule} from '@angular/forms'
 
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './property/nav-bar/nav-bar.component';
@@ -12,10 +13,11 @@ import { AddPropertyComponent } from './Property/add-property/add-property.compo
 import { PropertyDetailComponent } from './Property/property-detail/property-detail.component';
 
 const appRoutes:Routes =[
-  {path:'',component:PropertyListComponent},
+  {path:'',component:PropertyListComponent},//Default Url,
   {path:'rent-property',component:PropertyListComponent},
   {path:'add-property',component:AddPropertyComponent},
-  {path:'property-detail/:id',component:PropertyDetailComponent}
+  {path:'property-detail/:id',component:PropertyDetailComponent},
+  {path:'**',component:PropertyListComponent}//For WrongUrl
 ]
 
 @NgModule({
@@ -30,7 +32,8 @@ const appRoutes:Routes =[
   imports: [
     BrowserModule,
     HttpClientModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    FormsModule
   ],
   providers: [
     HousingService
